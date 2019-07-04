@@ -1,7 +1,7 @@
 -module(hospitalTriage).
 -export([startTriageProcess/0,triage/0,startCentralProcess/0,centralProcess/1,startHealthProviderProcess/0,healthProvider/0,masterProcess/1,recoverSlaveProcess/1,enqueue/3]).
 
-%  ******Simple Hospital Triage Process Implementation*********
+%  ******Simple Hospital Triage Process*********
 %
 % How to test:
 % hospitalTriage:startCentralProcess().
