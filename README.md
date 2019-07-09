@@ -7,6 +7,8 @@ In this exercise I implemented a Simple Hospital Triage Process, using asynchron
 ````
 hospitalTriage:startCentralProcess().
 hospitalTriage:startHealthProviderProcess().
+hospitalTriage:startHealthProviderProcess().
+hospitalTriage:startHealthProviderProcess().
 T=hospitalTriage:startTriageProcess().
 T!{notUrgent,"Filipe"}.
 T!{urgent,"Joao"}.
