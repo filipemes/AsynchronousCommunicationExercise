@@ -25,14 +25,14 @@ startHealthProviderProcess()->
 
 masterProcess(List)->
     process_flag(trap_exit, true),                                                                     
-    link(whereis(slaveProcess)),                                                    % master process creates a link to the slave process                                                 
+    link(whereis(slaveProcess)),                                                                                                   
         receive
             {'EXIT',_,_} -> io:format("Recover Slave Process~n"),recoverSlaveProcess(List),masterProcess(List);
             {sendToBackup,ListSlave} -> masterProcess(ListSlave)
         end.
 
 recoverSlaveProcess(List)->
-    register(slaveProcess,spawn(hospitalTriage,centralProcess,[List])).                 % create a new slave process and register
+    register(slaveProcess,spawn(hospitalTriage,centralProcess,[List])).                
 
 triage()->
     receive
