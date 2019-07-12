@@ -14,8 +14,8 @@
 % Author: Filipe Mesquita
 
 startCentralProcess()->
-    register(slaveProcess,spawn(hospitalTriage,centralProcess,[[]])),                    % create and register slave process
-    register(masterProcess,spawn(hospitalTriage,masterProcess,[[]])).                    % create a master process 
+    register(slaveProcess,spawn(hospitalTriage,centralProcess,[[]])),                   
+    register(masterProcess,spawn(hospitalTriage,masterProcess,[[]])).                    
 
 startTriageProcess()->
     spawn(hospitalTriage,triage,[]).
