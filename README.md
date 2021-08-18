@@ -1,6 +1,6 @@
 # Asynchronous Communication Exercise
 
-In this exercise I implemented a Simple Hospital Triage Process using asynchronous messages. The aim of this exercise was simulate a hospital triage process, when a patient arrives to triage process, it gives a priority and forwards it to central process. The Central process enqueue it with the respective priority, the queue is always sorted by priority. The health provider processes will attend patients through Central process.
+In this exercise I implemented a Simple Hospital Triage Process using asynchronous messages. The aim of this exercise was simulating a hospital triage process, when a patient arrives to the triage process, it gives priority and forwards it to the central process. The Central process enqueues it with the respective priority, the queue is always sorted by priority. The health provider processes will attend the patients through Central process.
 
 ## How to test
 
